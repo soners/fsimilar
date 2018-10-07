@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f fsimilar.exe
+gcc fsimilar.c similarity.c strlib.c levenstein.c dll.c progressbar.c -o fsimilar.exe 2> /dev/null
+
+./fsimilar.exe $@
